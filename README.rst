@@ -14,7 +14,7 @@ betweeen
 .. image:: https://pypip.in/license/betweeen/badge.svg?style=flat
     :target: https://pypi.python.org/pypi/betweeen
 
-`Between <https://between.us/?lang=en>`__) of `VCNC <https://between.us/about>`__ for Python.
+`Between <https://between.us/?lang=en>`__ of `VCNC <https://between.us/about>`__ for Python.
 
 
 Installation

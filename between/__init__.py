@@ -1,13 +1,17 @@
 # -*- coding: UTF-8 -*-
 
 """
-    between
-    ~~~~~~~
+between for Python
+~~~~~~~~~~~~~~~~~~
 
-    Between of VCNC for Python
+Between of VCNC for Python. Basic usage:
 
-    :copyright: (c) 2015 by Taehoon Kim.
-    :license: BSD, see LICENSE for more details.
+    >>> import between
+    >>> client = betweeen.Client("YOUR_ID", "YOUR_PASSWORD")
+    >>> client.sendMessage("Carpe diem!")
+
+:copyright: (c) 2015 by Taehoon Kim.
+:license: BSD, see LICENSE for more details.
 """
 
 

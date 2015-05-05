@@ -11,6 +11,13 @@ USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1092.0 Safari/536.6"
 ]
 
+def make_url(url):
+    if url.find("https://") == -1 and url.find("http://") == -1:
+        if url[0] == "/":
+            return "https://api-between.vcnc.co.kr" + url
+        else:
+            return "https://api-between.vcnc.co.kr/" + url
+
 def now():
     return int(time()*1000)
 
