@@ -4,15 +4,16 @@ betweeen
 
 `Between <https://between.us/?lang=en>`__ of `VCNC <https://between.us/about>`__ for Python.
 
-*To be loved, or not to be, this is the question...*
+*How to be more loved?*, this is the answer for your question.
+
 
 How to use
 ==========
 
-1. Make a girlfriend or boyfriend
-2. Install Between application : `link <https://between.us/download/mobile/>`__
-3. Create a fun bot for your lover
-4. Love and be loved
+1. Date with somebody
+2. Install `Between <https://between.us/download/mobile/>`__
+3. Write a fun bot for your lover
+4. **Be more loved** by your lover
 
 
 Installation
