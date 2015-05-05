@@ -6,6 +6,7 @@ requests.utils
 
 This module provides utility functions that are used within between.
 """
+import collections
 
 USER_AGENTS = [
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",

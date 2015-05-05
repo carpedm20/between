@@ -37,6 +37,18 @@ Example
     client.send("Carpe diem!")
 
 
+To do
+=====
+
+- [x] Login, Authentication
+- [x] Send a message
+- [x] Send a sticker
+- [x] Send an image
+- [x] Get recent messages
+- [ ] Get uploaded image lists
+- [ ] Message long polling
+
+
 Authors
 =======
 
