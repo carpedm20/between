@@ -4,7 +4,7 @@ betweeen
 
 `Between <https://between.us/?lang=en>`__ of `VCNC <https://between.us/about>`__ for Python.
 
-*How to be more loved?*, this is the answer for your question.
+*How to be loved?* this is the answer for your question.
 
 
 How to use
@@ -12,8 +12,8 @@ How to use
 
 1. Date with somebody
 2. Install `Between <https://between.us/download/mobile/>`__
-3. Write a fun bot for your lover
-4. **Be more loved** by your lover
+3. Write a fun bot
+4. **Be loved** by your lover
 
 
 Installation
