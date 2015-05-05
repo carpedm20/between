@@ -435,7 +435,11 @@ class Client(object):
 
         return j
 
-    def long_poll(self, on_message, on_error=None, on_close=None):
+    def run_forever(self, on_message, on_error=None, on_close=None):
+        """Long polling method
+
+        :param on_message: method that will executed when message is arrived.
+        """
         ws = websocket.WebSocketApp(self._websocket_url,
                                   on_message = on_message,
                                   on_error = on_error,
