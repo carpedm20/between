@@ -4,33 +4,29 @@ betweeen
 
 `Between <https://between.us/?lang=en>`__ of `VCNC <https://between.us/about>`__ for Python.
 
+*To be loved, or not to be, this is the question...*
+
+How to use
+==========
+
+1. Make a girlfriend or boyfriend
+2. Install Between application : `link <https://between.us/download/mobile/>`__
+3. Create a fun bot for your lover
+4. Love and be loved
+
 
 Installation
 ============
 
-To install betweeen, simply: 
+Simple.
 
 .. code-block:: console
 
     $ pip install betweeen
 
-Or, you can use:
 
-.. code-block:: console
-
-    $ pip install betweeen
-
-Or, you can also install manually:
-
-.. code-block:: console
-
-    $ git clone git://github.com/carpedm20/betweeen.git
-    $ cd betweeen
-    $ python setup.py install
-
-
-Echo bot example
-================
+Example
+=======
 
 .. code-block:: console
 
