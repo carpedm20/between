@@ -392,7 +392,13 @@ class Client(object):
 
         self._request_id += 1
 
-        return json.loads(self._websocket.recv())
+        try:
+            result = self._websocket.recv()
+        except:
+            self.start()
+            return False
+
+        return json.loads(result)
 
     def upload_image(self, path):
         """Upload an image to Between server

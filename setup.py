@@ -68,7 +68,7 @@ setup(
     packages=['between'],
     install_requires=[
         'requests',
-        'bs4'
+        'websocket-client',
     ],
     url=source,
     version=version,
