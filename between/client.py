@@ -48,6 +48,9 @@ class Client(object):
         self._request_id = 0
 
         self.login(email, password)
+        self.start()
+
+    def start(self):
         self.get_status()
         self.set_device()
         self.get_endpoints()
@@ -200,8 +203,8 @@ class Client(object):
             }
         }
         j = self._send("/batch", payload)
-        if not j["m"]["body"]["data"][0]["success"]:
-            raise MessageError(j)
+        #if not j["m"]["body"]["data"][0]["success"]:
+        #    raise MessageError(j)
 
     def send_sticker(self, sticker_id=None):
         """Send a sticker
@@ -381,7 +384,12 @@ class Client(object):
         }
         msg = str(payload).replace("u'","'").replace("'",'"').replace("True","true")
 
-        self._websocket.send(msg)
+        try:
+            self._websocket.send(msg)
+        except:
+            self.start()
+            self._websocket.send(msg)
+
         self._request_id += 1
 
         return json.loads(self._websocket.recv())

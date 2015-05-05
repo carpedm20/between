@@ -35,6 +35,8 @@ Example
 
     client = betweeen.Client("YOUR_ID", "YOUR_PASSWORD")
     client.send("Carpe diem!")
+    client.send_sticker()
+    client.send_image("./test.jpg")
 
 
 To do
