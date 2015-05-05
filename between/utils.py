@@ -1,6 +1,11 @@
-import re
-import json
-from time import time
+# -*- coding: utf-8 -*-
+
+"""
+requests.utils
+~~~~~~~~~~~~~~
+
+This module provides utility functions that are used within between.
+"""
 
 USER_AGENTS = [
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36",
@@ -17,15 +22,3 @@ def make_url(url):
             return "https://api-between.vcnc.co.kr" + url
         else:
             return "https://api-between.vcnc.co.kr/" + url
-
-def now():
-    return int(time()*1000)
-
-def get_json(text):
-    return json.loads(re.sub(r"for.*(;;).*;", '', text.decode("unicode-escape").encode('utf-8'), 1))
-
-def digit_to_char(digit):
-    if digit < 10:
-        return str(digit)
-    return chr(ord('a') + digit - 10)
-

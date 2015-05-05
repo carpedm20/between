@@ -5,8 +5,7 @@ requests.exceptions
 ~~~~~~~~~~~~~~~~~~~
 
 This module contains the set of Between's exceptions.
-
 """
 
 class LoginError(IOError):
-    """An HTTP error occurred."""
+    """An Login error occurred."""
