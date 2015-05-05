@@ -435,6 +435,13 @@ class Client(object):
 
         return j
 
+    def long_poll(self, on_message, on_error=None, on_close=None):
+        ws = websocket.WebSocketApp(self._websocket_url,
+                                  on_message = on_message,
+                                  on_error = on_error,
+                                  on_close = on_close)
+        ws.run_forever()
+
     def set_device(self, os_type="D_WINDOWS"):
         payload = {
             "type" : os_type

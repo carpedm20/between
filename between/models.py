@@ -42,7 +42,7 @@ class Message(Base):
 
     def __unicode__(self):
         if hasattr(self, 'content'):
-            return u'<Message %s from %s (%s)>' % (self.content, self._from, self.datetime)
+            return u'<Message "%s" from %s (%s)>' % (self.content, self._from, self.datetime)
         else:
             return u'<Message %s from %s (%s)>' % (self.attachments[0]['attachment_type'], self._from, self.datetime)
 
