@@ -1,6 +1,6 @@
 import between
 
-client = betweeen.Client("YOUR_ID", "YOUR_PASSWORD")
+client = between.Client("YOUR_ID", "YOUR_PASSWORD")
 
 me = client.me.account_id
 lover = client.lover.account_id

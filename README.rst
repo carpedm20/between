@@ -1,5 +1,5 @@
 ========
-betweeen
+between
 ========
 
 `Between <https://between.us/?lang=en>`__ of `VCNC <https://between.us/about>`__ for Python.
@@ -23,7 +23,7 @@ Simple.
 
 .. code-block:: console
 
-    $ pip install betweeen
+    $ pip install between
 
 
 Example
@@ -33,9 +33,9 @@ Simple commands:
 
 .. code-block:: python
 
-    import betweeen
+    import between
 
-    client = betweeen.Client("YOUR_ID", "YOUR_PASSWORD")
+    client = between.Client("YOUR_ID", "YOUR_PASSWORD")
     client.send("Carpe diem!")
     client.send_sticker()
     client.send_image("./test.jpg")
@@ -44,7 +44,7 @@ Simple commands:
 
 .. code-block:: python
 
-   import betweeen
+   import between
 
    def on_message(ws, message):
       print message
@@ -52,7 +52,7 @@ Simple commands:
    def on_open(ws):
       ws.send("Hello World!")
 
-   bot = betweeen.Bot("YOUR_ID", "YOUR_PASSWORD", on_open=on_open, on_message=on_message)
+   bot = between.Bot("YOUR_ID", "YOUR_PASSWORD", on_open=on_open, on_message=on_message)
    bot.run_forever()
 
 `Echo bot <https://github.com/carpedm20/between/blob/master/examples/echobot.py>`__:
@@ -61,7 +61,7 @@ Simple commands:
 
    import between
 
-   client = betweeen.Client("YOUR_ID", "YOUR_PASSWORD")
+   client = between.Client("YOUR_ID", "YOUR_PASSWORD")
 
    me = client.me.account_id
    lover = client.lover.account_id

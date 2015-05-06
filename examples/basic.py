@@ -1,6 +1,6 @@
-import betweeen
+import between
 
-client = betweeen.Client("YOUR_ID", "YOUR_PASSWORD")
+client = between.Client("YOUR_ID", "YOUR_PASSWORD")
 
 print client.me
 print client.lover
