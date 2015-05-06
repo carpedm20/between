@@ -39,7 +39,7 @@ class Client(object):
 
         """
         self.email = email
-        self.headers = {}
+        self.headers = {'User-Agent': 'python-between/1.0.0'}
         self.uuid = str(uuid1())
         self.me = None
         self.lover = None
@@ -66,6 +66,14 @@ class Client(object):
 
     def post(self, url, files=None, payload=None, is_json=True):
         r = self._session.post(make_url(url), data=payload, headers=self.headers, files=files)
+        
+        if is_json:
+            return json.loads(r.text)
+        else:
+            return r.text
+
+    def delete(self, url, files=None, payload=None, is_json=True):
+        r = self._session.delete(make_url(url), data=payload, headers=self.headers, files=files)
         
         if is_json:
             return json.loads(r.text)
@@ -454,3 +462,14 @@ class Client(object):
         j = self.get("/%s/device" % self.session_id, payload)
 
         return j
+
+    def delete_session(self):
+        j = self.delete('/%s/' % self.session_id)
+
+        return j
+
+    def __del__(self):
+        j = self.get_status()
+        j = self.delete_session()
+
+        return j['value']
