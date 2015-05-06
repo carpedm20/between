@@ -108,7 +108,7 @@ Features
 - Get recent messages
 - Message long polling
 - Get uploaded image lists (in progress)
-- *This work is not connected with Between or VCNC Corporation*
+- *This work is not connected with VCNC Corporation*
 
 
 Screenshot
