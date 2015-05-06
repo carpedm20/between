@@ -109,7 +109,7 @@ Features
 Screenshot
 ==========
 
-.. image:: https://raw.githubusercontent.com/carpedm20/between/master/contents/capture.png
+.. image:: https://raw.githubusercontent.com/carpedm20/between/master/contents/screenshot.png
    :width: 90%
 
 
