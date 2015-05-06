@@ -93,16 +93,16 @@ Simple commands:
    bot = between.Bot(client=client, on_message=on_message)
    bot.run_forever()
 
-To do
-=====
+Features
+========
 
-- [x] Login, Authentication
-- [x] Send a message
-- [x] Send a sticker
-- [x] Send an image
-- [x] Get recent messages
-- [x] Message long polling
-- [ ] Get uploaded image lists
+- Login and authentication
+- Send a message
+- Send a sticker
+- Send an image
+- Get recent messages
+- Message long polling
+- Get uploaded image lists (in progress)
 
 
 Authors
