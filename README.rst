@@ -3,7 +3,7 @@ between
 ========
 
 .. image:: https://scontent-nrt.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10517518_750265521675300_788817894578396496_n.png?oh=ff97f61a0ed51a1cea38793f83e5a642&oe=55C4B48B
-    :width: 30%
+   :width: 40pt
 
 `Between <https://between.us/?lang=en>`__ of `VCNC <https://between.us/about>`__ for Python.
 
