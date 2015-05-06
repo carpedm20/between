@@ -262,13 +262,17 @@ class Client(object):
         #if not j["m"]["body"]["data"][0]["success"]:
         #    raise MessageError(j)
 
-    def send_image(self, path):
+    def send_image(self, path=None, image_id=None):
         """Send an image
 
         :param path: path of image to upload
         """
 
-        image = self.upload_image(path)
+        if not path and not image_id:
+            raise MessageError("path or image_id should be passed")
+
+        if not image_id:
+            image_id = self.upload_image(path)._id
 
         payload = {
             "name" : "batch",
@@ -284,7 +288,7 @@ class Client(object):
                                     "attachments" : [
                                         {
                                             "attachment_type" : "T_IMAGE",
-                                            "reference" : image._id
+                                            "reference" : image_id
                                         }
                                     ]
                                 }
