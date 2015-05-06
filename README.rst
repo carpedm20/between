@@ -111,7 +111,7 @@ Screenshot
 
 .. raw:: html
 
-   <img alt="python-between" class="align-center" src="https://raw.githubusercontent.com/carpedm20/between/master/content/capture.png" style="width: 90%;"></a>
+   <img alt="python-between" class="align-center" src="https://raw.githubusercontent.com/carpedm20/between/master/contents/capture.png" style="width: 90%;"></a>
 
 
 Authors
