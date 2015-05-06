@@ -93,6 +93,7 @@ Simple commands:
    bot = between.Bot(client=client, on_message=on_message)
    bot.run_forever()
 
+
 Features
 ========
 
@@ -103,6 +104,14 @@ Features
 - Get recent messages
 - Message long polling
 - Get uploaded image lists (in progress)
+
+
+Screenshot
+==========
+
+.. raw:: html
+
+   <img alt="python-between" class="align-center" src="https://raw.githubusercontent.com/carpedm20/between/master/content/capture.png" style="width: 90%;"></a>
 
 
 Authors
