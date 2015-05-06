@@ -259,8 +259,8 @@ class Client(object):
             }
         }
         j = self._send("/batch", payload)
-        if not j["m"]["body"]["data"][0]["success"]:
-            raise MessageError(j)
+        #if not j["m"]["body"]["data"][0]["success"]:
+        #    raise MessageError(j)
 
     def send_image(self, path):
         """Send an image
@@ -307,8 +307,8 @@ class Client(object):
             }
         }
         j = self._send("/batch", payload)
-        if not j["m"]["body"]["data"][0]["success"]:
-            raise MessageError(j)
+        #if not j["m"]["body"]["data"][0]["success"]:
+        #    raise MessageError(j)
 
     def get_images(self, limit=64):
         """Get uploaded images
@@ -373,6 +373,7 @@ class Client(object):
         :param c: (optional) ?
         :param v: (optional) ?
         """
+        
         message["type"] = "CALL"
 
         payload = {
@@ -392,12 +393,7 @@ class Client(object):
 
         self._request_id += 1
 
-        try:
-            result = self._websocket.recv()
-        except:
-            self.start()
-            return False
-
+        result = self._websocket.recv()
         return json.loads(result)
 
     def upload_image(self, path):
@@ -440,11 +436,12 @@ class Client(object):
 
         :param on_message: method that will executed when message is arrived.
         """
-        ws = websocket.WebSocketApp(self._websocket_url,
-                                  on_message = on_message,
-                                  on_error = on_error,
-                                  on_close = on_close)
-        ws.run_forever()
+        self._websocket_app = websocket.WebSocketApp(self._websocket_url,
+                                                    on_message = on_message,
+                                                    on_error = on_error,
+                                                    on_close = on_close)
+        self.run_forever_mode = True
+        self._websocket_app.run_forever()
 
     def set_device(self, os_type="D_WINDOWS"):
         payload = {

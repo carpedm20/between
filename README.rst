@@ -29,6 +29,8 @@ Simple.
 Example
 =======
 
+Simple commands:
+
 .. code-block:: console
 
     import betweeen
@@ -38,6 +40,20 @@ Example
     client.send_sticker()
     client.send_image("./test.jpg")
 
+Simple bot:
+
+.. code-block:: console
+
+   import betweeen
+
+   def on_message(ws, message):
+      print message
+
+   def on_open(ws):
+      ws.send("Hello World!")
+
+   bot = betweeen.Bot("YOUR_ID", "YOUR_PASSWORD", on_open=on_open, on_message=on_message)
+   bot.run_forever()
 
 To do
 =====
@@ -47,8 +63,8 @@ To do
 - [x] Send a sticker
 - [x] Send an image
 - [x] Get recent messages
+- [x] Message long polling
 - [ ] Get uploaded image lists
-- [ ] Message long polling
 
 
 Authors

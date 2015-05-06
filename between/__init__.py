@@ -16,10 +16,11 @@ Between of VCNC for Python. Basic usage:
 
 
 from .client import *
+from .bot import *
 
 
 __copyright__ = 'Copyright 2015 by Taehoon Kim'
-__version__ = '0.1.4'
+__version__ = '0.2.0'
 __license__ = 'BSD'
 __author__ = 'Taehoon Kim'
 __email__ = 'carpedm20@gmail.com'
@@ -27,4 +28,5 @@ __source__ = 'https://github.com/carpedm20/between/'
 
 __all__ = [
     'Client',
+    'Bot',
 ]
