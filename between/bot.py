@@ -15,7 +15,7 @@ import select
 
 from .models import Message
 from .client import Client
-from .exceptions import LoginError
+from .exceptions import LoginError, BotError
 
 from websocket._abnf import ABNF
 from websocket import WebSocketConnectionClosedException
@@ -86,8 +86,7 @@ class Bot(Client):
 
         close_frame = None
         
-        #try:
-        if True:
+        try:
             self._callback(self.on_open)
 
             while True:
@@ -126,8 +125,6 @@ class Bot(Client):
                     self.start()
                     while not self._websocket.connected:
                         self.start()
-        """
-
         except Exception as e:
             self._callback(self.on_error, e)
         finally:
@@ -135,7 +132,6 @@ class Bot(Client):
             self._callback(self.on_close,
                 *self._get_close_args(close_frame.data if close_frame else None))
             self._websocket = None
-        """
 
     def _get_close_args(self, data):
         import inspect
@@ -154,8 +150,7 @@ class Bot(Client):
             try:
                 callback(self, *args)
             except Exception as e:
-                print e
-                error(e)
+                raise BotError(e)
                 if isEnabledForDebug():
                     _, _, tb = sys.exc_info()
                     traceback.print_tb(tb)

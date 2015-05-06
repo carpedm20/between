@@ -14,4 +14,7 @@ class AuthenticateError(IOError):
     """An Login error occurred."""
 
 class MessageError(IOError):
-    """An Login error occurred."""
+    """An error occurred from message communication."""
+
+class BotError(IOError):
+    """An error occurred by bot execution."""

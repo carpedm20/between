@@ -340,7 +340,7 @@ class Client(object):
         if j["status"] == "ERROR":
             raise MessageError(j)
 
-        print(j)
+        return j
 
     def get_recent_messages(self, limit=32):
         """Get recent messages
