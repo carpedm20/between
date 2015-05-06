@@ -79,7 +79,7 @@ Simple commands:
                   if event['action'] == 'EA_ADD':
                      msg = event['messageEvent']['message']
 
-                     if msg['from'] != me:
+                     if msg['from'] != me: # this will not work.. see issue #3
                            if msg.has_key('attachments'):
                               attachment = msg['attachments'][0]
 
