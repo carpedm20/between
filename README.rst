@@ -38,7 +38,9 @@ Simple commands:
     client = between.Client("YOUR_ID", "YOUR_PASSWORD")
     client.send("Carpe diem!")
     client.send_sticker()
+    client.send_sticker("85_12")
     client.send_image("./test.jpg")
+    print client.get_recent_messages()
 
 `Simple bot <https://github.com/carpedm20/between/blob/master/examples/simplebot.py>`__:
 
@@ -109,7 +111,7 @@ Features
 Screenshot
 ==========
 
-.. image:: https://raw.githubusercontent.com/carpedm20/between/master/contents/screenshot.png
+.. image:: https://raw.githubusercontent.com/carpedm20/between/master/contents/demo.png
    :width: 90%
 
 
