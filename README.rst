@@ -6,7 +6,7 @@ between
 
 `Between <https://between.us/?lang=en>`__ of `VCNC <https://between.us/about>`__ for Python.
 
-*How to be loved?* this is the answer for your question.
+*How to be loved?* This is the answer for your question.
 
 
 How to use
@@ -108,6 +108,7 @@ Features
 - Get recent messages
 - Message long polling
 - Get uploaded image lists (in progress)
+- *This work is not connected with Between or VCNC Corporation*
 
 
 Screenshot
