@@ -31,7 +31,7 @@ Example
 
 Simple commands:
 
-.. code-block:: console
+.. code-block:: python
 
     import betweeen
 
@@ -42,7 +42,7 @@ Simple commands:
 
 Simple bot:
 
-.. code-block:: console
+.. code-block:: python
 
    import betweeen
 
