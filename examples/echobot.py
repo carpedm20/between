@@ -2,8 +2,8 @@ import between
 
 client = between.Client("YOUR_ID", "YOUR_PASSWORD")
 
-me = client.me.account_id
-lover = client.lover.account_id
+me = client.me.id
+lover = client.lover.id
 
 def on_message(ws, message):
     print message
