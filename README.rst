@@ -3,6 +3,8 @@ between
 ========
 
 .. image:: https://raw.githubusercontent.com/carpedm20/blog/master/content/images/between.png
+   :height: 50px
+   :width: 50px
 
 `Between <https://between.us/?lang=en>`__ of `VCNC <https://between.us/about>`__ for Python.
 
