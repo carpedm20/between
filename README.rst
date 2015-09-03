@@ -2,7 +2,7 @@
 between
 ========
 
-.. image:: https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/v/t1.0-1/p200x200/10517518_750265521675300_788817894578396496_n.png?oh=7ca341ef155d138a5a44367e2ea16352&oe=55CBB403&__gda__=1438880194_5cb73422083338e6855db51023441766
+.. image:: https://raw.githubusercontent.com/carpedm20/blog/master/content/images/between.png
 
 `Between <https://between.us/?lang=en>`__ of `VCNC <https://between.us/about>`__ for Python.
 
